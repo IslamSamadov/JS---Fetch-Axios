@@ -53,9 +53,8 @@ main{
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
-    display: none;
 }
-.card-col{
+.card{
     background-color: #282a35;
     color: white;
     border: 1px black solid;
@@ -70,7 +69,6 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    display: none;
 }
 .form-title{
     font-size: 48px;
@@ -106,4 +104,12 @@ button{
     justify-self: center;
     align-self: center;
     padding: 10px;
+}
+.btn{
+    padding: 5px;
+    margin-top: 10px;
+}
+.details{
+    text-decoration: none;
+    color: white;
 }
