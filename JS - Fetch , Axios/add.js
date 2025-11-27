@@ -19,4 +19,5 @@ form.addEventListener("submit", async (e) => {
     country.value = ""
     phone.value = ""
     code.value = ""
+    window.location.href = "supplier.html";
 })

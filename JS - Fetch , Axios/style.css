@@ -50,16 +50,25 @@ main{
 .card-container{
     padding: 50px 200px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
     gap: 30px;
 }
+.card-col{
+    flex: 1 1 27%;
+    display: flex;
+}
 .card{
+    flex: 1 1 100%;
     background-color: #282a35;
     color: white;
     border: 1px black solid;
     border-radius:3px;
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .main-text{
     color: #03ab6d;

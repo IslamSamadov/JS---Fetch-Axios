@@ -17,8 +17,10 @@ async function GetDatas() {
                 <div class="address-country">${e.address.country}</div>
                 <div class="address-phone">${e.address.phone}</div>
             </div>
-            <a href="details.html?id=${e.id}" class="details">Details</a>
+            <div>
+                            <a href="details.html?id=${e.id}" class="details">Details</a>
             <button class="btn" data-id=${e.id}>Delete</button>
+            </div>
         </div>
     </div>`
     });
