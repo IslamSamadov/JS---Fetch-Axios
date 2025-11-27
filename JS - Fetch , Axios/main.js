@@ -49,20 +49,21 @@ async function GetDatas() {
     });
 }
 GetDatas()
-// form.addEventListener("submit", async (e) => {
-//     e.preventDefault()
-//     let newSupplier = {
-//         companyName:companyName.value,
-//         contactTitle:ititle.value,
-//         address:{country:icountry.value},
-//         address:{phone:iphone.value},
-//         address:{postalCode:icode.value}
-//     }
-//     await axios.post("https://northwind.vercel.app/api/suppliers", newSupplier)
-//     companyName.value = ""
-//     title.value = ""
-//     country.value = ""
-//     phone.value = ""
-//     code.value = ""
-//     GetDatas()
-// })
+form.addEventListener("submit", async (e) => {
+    e.preventDefault()
+    let newSupplier = {
+        companyName:companyName.value,
+        contactTitle:ititle.value,
+        address:{country:icountry.value},
+        address:{phone:iphone.value},
+        address:{postalCode:icode.value}
+    }
+    await axios.post("https://northwind.vercel.app/api/suppliers", newSupplier)
+    companyName.value = ""
+    title.value = ""
+    country.value = ""
+    phone.value = ""
+    code.value = ""
+    GetDatas()
+})
+
